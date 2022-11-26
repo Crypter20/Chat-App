@@ -8,7 +8,7 @@ import { useStateValue } from "./StateProvider";
 function SidebarChat({ id, name, photoURL, addNewChat }) {
   const [SEED, setSEED] = useState("");
   const [messages, setMessages] = useState("");
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   useEffect(() => {
     setSEED(Math.floor(Math.random() * 5000));
   }, []);

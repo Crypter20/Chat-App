@@ -1,7 +1,7 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import { useParams } from "react-router-dom";
 import { SearchOutlined } from "@material-ui/icons";
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import AttachFileIcon from "@material-ui/icons/AttachFile";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import MicIcon from "@material-ui/icons/Mic";
@@ -19,7 +19,7 @@ function Chat() {
   const { roomId } = useParams();
   const [roomName, setRoomName] = useState({ name: "", photoURL: "" });
   const [messages, setMessages] = useState([]);
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const [isPreviewShown, setPreviewShown] = useState(false);
   const [isCloseShown, setCloseShown] = useState(false);
 
@@ -36,7 +36,7 @@ function Chat() {
 
   useEffect(() => {
     scrollToBottom();
-  }, [messages]);
+  });
 
   const onEmojiClick = (event, emojiObject) => {
     const position = myRef.current.selectionStart;
@@ -73,7 +73,7 @@ function Chat() {
           setMessages(snapshot.docs.map((doc) => doc.data()))
         );
     }
-  }, [roomId]);
+  }, [roomId, user.displayName]);
 
   useEffect(() => {
     setSEED(Math.floor(Math.random() * 5000));

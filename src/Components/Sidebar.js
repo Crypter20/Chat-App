@@ -10,7 +10,7 @@ import db from "./../firebase";
 import { useStateValue } from "./StateProvider";
 
 function Sidebar() {
-  const [{ user }, dispatch] = useStateValue();
+  const [{ user }] = useStateValue();
   const [rooms, setRooms] = useState([]);
   useEffect(() => {
     db.collection("rooms").onSnapshot((snapshot) =>
