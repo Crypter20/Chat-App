@@ -1,4 +1,4 @@
-import Button from "@mui/material/Button";
+import { Button } from "@material-ui/core";
 import React from "react";
 import { auth, provider } from "../firebase";
 import "./../CSS/Login.css";

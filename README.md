@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# Whatsapp Clone Chat App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
 
-## Available Scripts
+[Whats App Clone](https://whatsapp-5f5f1.web.app/)
 
-In the project directory, you can run:
+## Some Key Fetures and Technologies
 
-### `npm start`
+1. React JS
+2. Router
+3. Material UI
+4. Google Authentification
+5. Firebase Firestore
+6. Powerful Backend provided by firebase
+7. Deployement using Firebase
+8. Emoji Keyboard
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Description of the Website
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. UI of the app is inspired from the Whatsapp Web App.
+2. User has to login with his or her google account to enter the app.
+3. The whole screen is divided between two parts.
 
-### `npm test`
+- Sidebar
+- Chat
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. In order to start the chat, user have to click on **Add new chat** option which will ask user to enter email address he or she want to chat.
+5. Backend will ensure that the entered email is correct and registered.
+6. Once verification is done, user can start the chat.
+7. Emoji Keyboard can be used from the bottom side of the chat window.
 
-### `npm run build`
+## Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This website is developed using the YuoTube video posted on the channel of **Clever Programmer**. Click [here](https://youtu.be/pUxrDcITyjg) to check out the Video.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Modification
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Private Chat Room
+2. Google Account Image on sidebar and chat window.
+3. Emoji Keyboard with close button
+4. Automatic Bottom Scroll

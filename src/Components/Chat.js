@@ -1,17 +1,17 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import { useParams } from "react-router-dom";
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import { SearchOutlined } from "@material-ui/icons";
 import React, { useState, useEffect, useRef } from "react";
-import AttachFileIcon from "@mui/icons-material/AttachFile";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import MicIcon from "@mui/icons-material/Mic";
-import InsertEmoticonIcon from "@mui/icons-material/InsertEmoticon";
+import AttachFileIcon from "@material-ui/icons/AttachFile";
+import MoreVertIcon from "@material-ui/icons/MoreVert";
+import MicIcon from "@material-ui/icons/Mic";
+import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
 import "./../CSS/Chat.css";
 import db from "./../firebase";
 import { useStateValue } from "./StateProvider";
 import firebase from "firebase";
 import Picker from "emoji-picker-react";
-import CloseIcon from "@mui/icons-material/Close";
+import CloseIcon from "@material-ui/icons/Close";
 
 function Chat() {
   const [input, setInput] = useState("");
@@ -112,7 +112,7 @@ function Chat() {
         </div>
         <div className="chat__headerRight">
           <IconButton>
-            <SearchOutlinedIcon />
+            <SearchOutlined />
           </IconButton>
           <IconButton>
             <AttachFileIcon />
